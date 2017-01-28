@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+<!--	<remove-node path="/api/package[@name='io.mattcarroll.hover.defaulthovermenu.menus']/class[@name='MenuListAdapter']/method[@name='getItem' and count(parameter)=1 and parameter[1][@type='int']]" />-->
+
+	<attr path="/api/package[@name='io.mattcarroll.hover.defaulthovermenu.menus']/class[@name='MenuListAdapter']/method[@name='getItem' and count(parameter)=1 and parameter[1][@type='int']]" name="return">Java.Lang.Object</attr>
+
+	<attr path="/api/package[@name='io.mattcarroll.hover.defaulthovermenu']/class[@name='HoverMenuView.HeadToTailTabIterator']/method[@name='next' and count(parameter)=0]" name="return">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='io.mattcarroll.hover.defaulthovermenu']/class[@name='HoverMenuView.TailToHeadTabIterator']/method[@name='next' and count(parameter)=0]" name="return">Java.Lang.Object</attr>
+
+	
+<!--	<remove-node path="/api/package[@name='io.mattcarroll.hover.defaulthovermenu.menus']/class[@name='MenuListAdapter']/method[@name='getItem' and count(parameter)=1 and parameter[1][@type='int']]" />-->
+	
+</metadata>
